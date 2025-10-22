@@ -14,7 +14,7 @@ permissios:
 concurrency: 
   group: ${{github.Workflow}}-${{ github.ref }}
   cancel-in-progress: true
-  
+
 jobs:
   Deploy: 
     name: 🏎️Deploy to Github pages
@@ -41,3 +41,4 @@ jobs:
       - name: 🍄 Deploy to Github pages
         id: deployment
         uses: actions/Deploy-pages@v4 
+        
