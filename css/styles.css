@@ -1,6 +1,11 @@
 body{
     background-color: rgb(0, 0, 0);
     color: rgb(49, 138, 80);
+    font-size: 40px ;
+}
+h1{
+    text-align: center;
+    
 }
 *{
     margin: 0;
@@ -8,10 +13,26 @@ body{
     box-sizing: border-box;
 }
 
-.navbar{
-    background-color: rgb(31, 94, 28);
-    color: rgb(146, 213, 198);
+.navbar {
+  overflow: hidden;
+  background-color: #085221;
 }
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #222326;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #2a984f;
+  color: #373740;
+}
+
 
 .navbar ul{
     display: flex;
@@ -76,9 +97,8 @@ header h3{
 .trap{
     color: rgb(49, 138, 80);
 }
-.pq{
-    color: rgb(49, 138, 80);
-}
+
+
 
 
 
@@ -91,6 +111,7 @@ header h3{
     justify-content: space-between;
     margin-bottom: 8px;
     align-items: center;
+    
 }
 
 .formulario-campo label{
@@ -107,5 +128,32 @@ header h3{
 }
 
 a:visited{
-    color:rgb(115, 255, 68)
+    color:rgb(77, 162, 48)
+}
+
+button {
+  color: rgb(36, 139, 43);
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+button::before {
+  margin-left: auto;
+}
+
+button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #a2cfaa;
+  display: block;
+  transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+  width: 100%;
 }
